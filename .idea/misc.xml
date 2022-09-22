@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Studio/StorageTechniques/app/src/main/res/drawable/alert_dialog_style.xml" value="0.12962962962962962" />
         <entry key="..\:/Android Studio/StorageTechniques/app/src/main/res/drawable/btn_style.xml" value="0.18888888888888888" />
         <entry key="..\:/Android Studio/StorageTechniques/app/src/main/res/drawable/edit_text_style.xml" value="0.18888888888888888" />
         <entry key="..\:/Android Studio/StorageTechniques/app/src/main/res/drawable/login_layout_style.xml" value="0.18888888888888888" />
         <entry key="..\:/Android Studio/StorageTechniques/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Android Studio/StorageTechniques/app/src/main/res/layout/activity_main2.xml" value="0.23324275362318841" />
         <entry key="..\:/Android Studio/StorageTechniques/app/src/main/res/layout/activity_splash.xml" value="0.25052083333333336" />
+        <entry key="..\:/Android Studio/StorageTechniques/app/src/main/res/layout/alert_dialog_layout.xml" value="0.23505434782608695" />
       </map>
     </option>
   </component>

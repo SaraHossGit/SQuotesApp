@@ -23,24 +23,24 @@ public class SplashActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                // Get Shared Preferences while splash is loading so as to decide where to intent
-
-                // Get the app context (the place we want to get the preferences to), then get the preferences
-                SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("AuthPref", Context.MODE_PRIVATE);
-
-                // Read if we have sharedPref
-                String storedUser = sharedPreferences.getString(SplashActivity.USER_KEY, null);
-                String storedPass = sharedPreferences.getString(SplashActivity.PASS_KEY, null);
-
-                if (storedPass.isEmpty() || storedUser.isEmpty()){
+//                // Get Shared Preferences while splash is loading so as to decide where to intent
+//
+//                // Get the app context (the place we want to get the preferences to), then get the preferences
+//                SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("AuthPref", Context.MODE_PRIVATE);
+//
+//                // Read if we have sharedPref
+//                String storedUser = sharedPreferences.getString(SplashActivity.USER_KEY, null);
+//                String storedPass = sharedPreferences.getString(SplashActivity.PASS_KEY, null);
+//
+//                if (storedPass.isEmpty() || storedUser.isEmpty()){
 
                     Intent i= new Intent(SplashActivity.this, MainActivity.class);
                     startActivity(i);
-                }
-                else{
-                    Intent i2= new Intent(SplashActivity.this, MainActivity2.class);
-                    startActivity(i2);
-                }
+//                }
+//                else{
+//                    Intent i2= new Intent(SplashActivity.this, MainActivity2.class);
+//                    startActivity(i2);
+//                }
             }
         }, 5000);
     }

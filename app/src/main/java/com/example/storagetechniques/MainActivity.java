@@ -57,9 +57,9 @@ public class MainActivity extends AppCompatActivity {
                     if (rememberMeCheck.isChecked()){
 
                         // Get the app context (the place we want to get the preferences to), then get the preferences
-                        SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("AuthPref", Context.MODE_PRIVATE);
+                        SplashActivity.sharedPreferences = getApplicationContext().getSharedPreferences("AuthPref", Context.MODE_PRIVATE);
                         // Get an instance of sharedPref editor (SharedPreferences.Editor editor) and use it to edit the sharedPref instance we have (sharedPreferences)
-                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        SharedPreferences.Editor editor = SplashActivity.sharedPreferences.edit();
 
                         // Store Shared Preferences
                         editor.putString(SplashActivity.USER_KEY,user);

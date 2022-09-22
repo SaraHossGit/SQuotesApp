@@ -37,11 +37,12 @@ public class SplashActivity extends AppCompatActivity {
                     String storedPass = sharedPreferences.getString(SplashActivity.PASS_KEY, null);
 
                     if (storedPass.isEmpty() || storedUser.isEmpty()){
-
+                        // No saved sharedPref, go to login screen
                         Intent i= new Intent(SplashActivity.this, MainActivity.class);
                         startActivity(i);
                     }
                     else{
+                        // Verified sharedPref, go to home screen
                         Intent i2= new Intent(SplashActivity.this, MainActivity2.class);
                         startActivity(i2);
                     }

@@ -33,6 +33,7 @@ public class SplashActivity extends AppCompatActivity {
                 String storedPass = sharedPreferences.getString(SplashActivity.PASS_KEY, null);
 
                 if (storedPass.isEmpty() || storedUser.isEmpty()){
+
                     Intent i= new Intent(SplashActivity.this, MainActivity.class);
                     startActivity(i);
                 }
